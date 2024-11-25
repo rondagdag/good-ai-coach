@@ -1,9 +1,8 @@
 import { initChatModel } from "langchain/chat_models/universal";
 
 //github
-export const model = await initChatModel("gpt-4", {
+export const model = await initChatModel("gpt-4o", {
   modelProvider: "openai",
-  apiKey: "GITHUB_OPENAI_API_KEY",
   temperature: 0,
   configuration: {
     baseURL: 'https://models.inference.ai.azure.com'
